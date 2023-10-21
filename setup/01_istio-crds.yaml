@@ -5,7 +5,7 @@ metadata:
   labels:
     istio-injection: disabled
 ---
-apiVersion: apiextensions.k8s.io/v1beta1
+apiVersion: apiextensions.k8s.io/v1
 kind: CustomResourceDefinition
 metadata:
   annotations:
@@ -80,7 +80,7 @@ spec:
     storage: true
 
 ---
-apiVersion: apiextensions.k8s.io/v1beta1
+apiVersion: apiextensions.k8s.io/v1
 kind: CustomResourceDefinition
 metadata:
   annotations:
@@ -165,7 +165,7 @@ spec:
     storage: true
 
 ---
-apiVersion: apiextensions.k8s.io/v1beta1
+apiVersion: apiextensions.k8s.io/v1
 kind: CustomResourceDefinition
 metadata:
   annotations:
@@ -932,7 +932,7 @@ spec:
     storage: true
 
 ---
-apiVersion: apiextensions.k8s.io/v1beta1
+apiVersion: apiextensions.k8s.io/v1
 kind: CustomResourceDefinition
 metadata:
   annotations:
@@ -1226,7 +1226,7 @@ spec:
     storage: true
 
 ---
-apiVersion: apiextensions.k8s.io/v1beta1
+apiVersion: apiextensions.k8s.io/v1
 kind: CustomResourceDefinition
 metadata:
   annotations:
@@ -1373,7 +1373,7 @@ spec:
     storage: true
 
 ---
-apiVersion: apiextensions.k8s.io/v1beta1
+apiVersion: apiextensions.k8s.io/v1
 kind: CustomResourceDefinition
 metadata:
   annotations:
@@ -1465,7 +1465,7 @@ spec:
     storage: true
 
 ---
-apiVersion: apiextensions.k8s.io/v1beta1
+apiVersion: apiextensions.k8s.io/v1
 kind: CustomResourceDefinition
 metadata:
   annotations:
@@ -1675,7 +1675,7 @@ spec:
     storage: true
 
 ---
-apiVersion: apiextensions.k8s.io/v1beta1
+apiVersion: apiextensions.k8s.io/v1
 kind: CustomResourceDefinition
 metadata:
   annotations:
@@ -2405,7 +2405,7 @@ spec:
     storage: true
 
 ---
-apiVersion: apiextensions.k8s.io/v1beta1
+apiVersion: apiextensions.k8s.io/v1
 kind: CustomResourceDefinition
 metadata:
   annotations:
@@ -3134,7 +3134,7 @@ spec:
     storage: true
 
 ---
-apiVersion: apiextensions.k8s.io/v1beta1
+apiVersion: apiextensions.k8s.io/v1
 kind: CustomResourceDefinition
 metadata:
   annotations:
@@ -3213,7 +3213,7 @@ spec:
     storage: true
 
 ---
-apiVersion: apiextensions.k8s.io/v1beta1
+apiVersion: apiextensions.k8s.io/v1
 kind: CustomResourceDefinition
 metadata:
   annotations:
@@ -3296,7 +3296,7 @@ spec:
     storage: true
 
 ---
-apiVersion: apiextensions.k8s.io/v1beta1
+apiVersion: apiextensions.k8s.io/v1
 kind: CustomResourceDefinition
 metadata:
   annotations:
@@ -3383,7 +3383,7 @@ spec:
     storage: true
 
 ---
-apiVersion: apiextensions.k8s.io/v1beta1
+apiVersion: apiextensions.k8s.io/v1
 kind: CustomResourceDefinition
 metadata:
   annotations:
@@ -3537,7 +3537,7 @@ spec:
     storage: true
 
 ---
-apiVersion: apiextensions.k8s.io/v1beta1
+apiVersion: apiextensions.k8s.io/v1
 kind: CustomResourceDefinition
 metadata:
   annotations:
@@ -3680,7 +3680,7 @@ spec:
     storage: true
 
 ---
-apiVersion: apiextensions.k8s.io/v1beta1
+apiVersion: apiextensions.k8s.io/v1
 kind: CustomResourceDefinition
 metadata:
   annotations:
@@ -3879,7 +3879,7 @@ spec:
     storage: true
 
 ---
-apiVersion: apiextensions.k8s.io/v1beta1
+apiVersion: apiextensions.k8s.io/v1
 kind: CustomResourceDefinition
 metadata:
   annotations:
@@ -3989,7 +3989,7 @@ spec:
     storage: true
 
 ---
-apiVersion: apiextensions.k8s.io/v1beta1
+apiVersion: apiextensions.k8s.io/v1
 kind: CustomResourceDefinition
 metadata:
   annotations:
@@ -4699,7 +4699,7 @@ spec:
 
 ---
 kind: CustomResourceDefinition
-apiVersion: apiextensions.k8s.io/v1beta1
+apiVersion: apiextensions.k8s.io/v1
 metadata:
   name: adapters.config.istio.io
   labels:
@@ -4730,7 +4730,7 @@ spec:
       
 ---
 kind: CustomResourceDefinition
-apiVersion: apiextensions.k8s.io/v1beta1
+apiVersion: apiextensions.k8s.io/v1
 metadata:
   name: instances.config.istio.io
   labels:
@@ -4761,7 +4761,7 @@ spec:
 
 ---
 kind: CustomResourceDefinition
-apiVersion: apiextensions.k8s.io/v1beta1
+apiVersion: apiextensions.k8s.io/v1
 metadata:
   name: templates.config.istio.io
   labels:
@@ -4792,7 +4792,7 @@ spec:
 
 ---
 kind: CustomResourceDefinition
-apiVersion: apiextensions.k8s.io/v1beta1
+apiVersion: apiextensions.k8s.io/v1
 metadata:
   name: handlers.config.istio.io
   labels:
@@ -4822,7 +4822,7 @@ spec:
       storage: true
 
 ---
-apiVersion: apiextensions.k8s.io/v1beta1
+apiVersion: apiextensions.k8s.io/v1
 kind: CustomResourceDefinition
 metadata:
   annotations:
@@ -4944,7 +4944,7 @@ spec:
     storage: true
 
 ---
-apiVersion: apiextensions.k8s.io/v1beta1
+apiVersion: apiextensions.k8s.io/v1
 kind: CustomResourceDefinition
 metadata:
   labels:
@@ -5079,7 +5079,7 @@ spec:
     storage: true
 
 ---
-apiVersion: apiextensions.k8s.io/v1beta1
+apiVersion: apiextensions.k8s.io/v1
 kind: CustomResourceDefinition
 metadata:
   name: clusterissuers.certmanager.k8s.io
@@ -5101,7 +5101,7 @@ spec:
     plural: clusterissuers
   scope: Cluster
 ---
-apiVersion: apiextensions.k8s.io/v1beta1
+apiVersion: apiextensions.k8s.io/v1
 kind: CustomResourceDefinition
 metadata:
   name: issuers.certmanager.k8s.io
@@ -5123,7 +5123,7 @@ spec:
     plural: issuers
   scope: Namespaced
 ---
-apiVersion: apiextensions.k8s.io/v1beta1
+apiVersion: apiextensions.k8s.io/v1
 kind: CustomResourceDefinition
 metadata:
   name: certificates.certmanager.k8s.io
@@ -5170,7 +5170,7 @@ spec:
       - cert
       - certs
 ---
-apiVersion: apiextensions.k8s.io/v1beta1
+apiVersion: apiextensions.k8s.io/v1
 kind: CustomResourceDefinition
 metadata:
   name: orders.certmanager.k8s.io
@@ -5211,7 +5211,7 @@ spec:
     plural: orders
   scope: Namespaced
 ---
-apiVersion: apiextensions.k8s.io/v1beta1
+apiVersion: apiextensions.k8s.io/v1
 kind: CustomResourceDefinition
 metadata:
   name: challenges.certmanager.k8s.io
