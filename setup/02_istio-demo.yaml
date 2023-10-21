@@ -31,7 +31,7 @@ metadata:
     istio: galley
 data:
   validatingwebhookconfiguration.yaml: |-    
-    apiVersion: admissionregistration.k8s.io/v1beta1
+    apiVersion: admissionregistration.k8s.io/v1
     kind: ValidatingWebhookConfiguration
     metadata:
       name: istio-galley
@@ -18693,7 +18693,7 @@ items:
 ---
 # Source: istio/charts/sidecarInjectorWebhook/templates/mutatingwebhook.yaml
 
-apiVersion: admissionregistration.k8s.io/v1beta1
+apiVersion: admissionregistration.k8s.io/v1
 kind: MutatingWebhookConfiguration
 metadata:
   name: istio-sidecar-injector
@@ -18723,7 +18723,7 @@ webhooks:
 ---
 # Source: istio/charts/galley/templates/poddisruptionbudget.yaml
 
-apiVersion: policy/v1beta1
+apiVersion: policy/v1
 kind: PodDisruptionBudget
 metadata:
   name: istio-galley
@@ -18746,7 +18746,7 @@ spec:
 ---
 # Source: istio/charts/gateways/templates/poddisruptionbudget.yaml
 
-apiVersion: policy/v1beta1
+apiVersion: policy/v1
 kind: PodDisruptionBudget
 metadata:
   name: istio-egressgateway
@@ -18766,7 +18766,7 @@ spec:
       app: istio-egressgateway
       istio: egressgateway
 ---
-apiVersion: policy/v1beta1
+apiVersion: policy/v1
 kind: PodDisruptionBudget
 metadata:
   name: istio-ingressgateway
@@ -18790,7 +18790,7 @@ spec:
 ---
 # Source: istio/charts/mixer/templates/poddisruptionbudget.yaml
 
-apiVersion: policy/v1beta1
+apiVersion: policy/v1
 kind: PodDisruptionBudget
 metadata:
   name: istio-policy
@@ -18813,7 +18813,7 @@ spec:
       istio: mixer
       istio-mixer-type: policy
 ---
-apiVersion: policy/v1beta1
+apiVersion: policy/v1
 kind: PodDisruptionBudget
 metadata:
   name: istio-telemetry
@@ -18840,7 +18840,7 @@ spec:
 ---
 # Source: istio/charts/pilot/templates/poddisruptionbudget.yaml
 
-apiVersion: policy/v1beta1
+apiVersion: policy/v1
 kind: PodDisruptionBudget
 metadata:
   name: istio-pilot
@@ -18863,7 +18863,7 @@ spec:
 ---
 # Source: istio/charts/security/templates/poddisruptionbudget.yaml
 
-apiVersion: policy/v1beta1
+apiVersion: policy/v1
 kind: PodDisruptionBudget
 metadata:
   name: istio-citadel
@@ -18886,7 +18886,7 @@ spec:
 ---
 # Source: istio/charts/sidecarInjectorWebhook/templates/poddisruptionbudget.yaml
 
-apiVersion: policy/v1beta1
+apiVersion: policy/v1
 kind: PodDisruptionBudget
 metadata:
   name: istio-sidecar-injector
